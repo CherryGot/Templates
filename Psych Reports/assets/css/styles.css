@@ -1,0 +1,315 @@
+.dropdown-menu .dropdown-item:focus, 
+.dropdown-menu .dropdown-item:hover, 
+.dropdown-menu a:active, 
+.dropdown-menu a:focus, 
+.dropdown-menu a:hover {    
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(72, 160, 137, 0.4);
+    background-color: #48a089;
+    color: #fff;
+}
+
+.bg-primary {
+    background-color: #48a089 !important;
+}
+
+.btn.btn-primary {
+    background-color: #48a089;
+    border-color: #48a089;
+    box-shadow: 0 2px 2px 0 rgba(72, 160, 137, 0.14), 0 3px 1px -2px rgba(72, 160, 137, 0.2), 0 1px 5px 0 rgba(72, 160, 137, 0.12);
+}
+
+.btn.btn-primary:active, 
+.btn.btn-primary:focus, 
+.btn.btn-primary:hover {
+    background-color: #48a089;
+    border-color: #48a089;
+    box-shadow: 0 14px 26px -12px rgba(72, 160, 137, 0.42), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(72, 160, 137, 0.2);
+}
+
+.btn.btn-primary.active.focus, 
+.btn.btn-primary.active:focus, 
+.btn.btn-primary.active:hover, 
+.btn.btn-primary:active.focus, 
+.btn.btn-primary:active:focus, 
+.btn.btn-primary:active:hover, 
+.open>.btn.btn-primary.dropdown-toggle.focus, 
+.open>.btn.btn-primary.dropdown-toggle:focus, 
+.open>.btn.btn-primary.dropdown-toggle:hover, 
+.show>.btn.btn-primary.dropdown-toggle.focus, 
+.show>.btn.btn-primary.dropdown-toggle:focus, 
+.show>.btn.btn-primary.dropdown-toggle:hover {
+    background-color: #48a089;
+    border-color: #48a089;
+}
+
+a {
+    color: #48a089;   
+}
+
+a:hover {
+    color: #48a089;
+    text-decoration: underline;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.section {
+    padding: 0;
+}
+
+.navbar {
+    border-radius: 0;
+    padding: 0.8rem 0;
+    margin: 0;
+    z-index: 100;
+}
+
+.navbar .navbar-brand img {
+    height: 36px;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link {
+    background: rgba(0,0,0,.02)
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.8rem;
+}
+
+#home-carousel .carousel-item img {
+    min-height: 240px;
+}
+
+#home-carousel .carousel-item .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+
+#home-carousel .carousel-item .carousel-overlay-1 {
+    border-top: 100vh solid #48a089;
+    border-right: 100px solid transparent;
+    width: 120%;
+}
+
+#home-carousel .carousel-item .carousel-overlay-2 {
+    border-top: 100vh solid rgba(72, 160, 137, 0.4);
+    border-right: 100px solid transparent;
+    width: 135%;
+}
+
+#home-carousel .carousel-item .content {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 35;
+    width: 60%;
+}
+
+#about-me p,
+#about-me li,
+#contact p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+#about-me .profile-pic {
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+#about-me .badges img {
+    max-height: 90px;
+}
+
+.load-carousel {
+    animation: load-carousel 800ms; 
+}
+
+@keyframes load-carousel {
+    0% {
+        opacity: 0;
+        left: 30%;
+    }
+    40% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+        left: 65%;
+    }
+}
+
+#test-carousel .carousel-indicators {
+    bottom: -50px;
+}
+
+#test-carousel .carousel-item .person-profile {
+    max-width: 150px;
+}
+
+#test-carousel .carousel-item p {
+    line-height: 1.125rem;
+}
+
+#contact-form label {
+    color: #555;
+}
+
+#contact-form .form-control:focus {
+    background-image: linear-gradient(0deg,#48a089 2px,rgba(244,67,54,0) 0),linear-gradient(0deg,#d2d2d2 1px,hsla(0,0%,82%,0) 0);
+}
+
+#contact-form .form-control:focus + label {
+    color: #48a089;
+}   
+
+#map-marker {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+}
+
+footer .brand-logo img{
+    height: 44px;
+}
+
+footer .twitter-feed {
+    max-height: 240px;
+    overflow-y: hidden;
+    border-radius: 3px;
+    padding: 0.3rem 0.5rem;
+}
+
+footer .twitter-feed:hover {
+    overflow-y: auto;
+}
+
+footer ul.site-links li {
+    display: block;
+}
+
+footer ul.site-links li a {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+footer .btn-social {
+    background: transparent;
+    border: 1px solid #ccc;
+}
+
+footer .btn-social:hover {
+    background: rgba(0,0,0,.02);
+}
+
+footer .btn-social i.fa {
+    color: #ccc;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar .navbar-nav .nav-item .dropdown-toggle::after {
+        transform: rotate(0deg);
+    }
+
+    .navbar .navbar-nav .nav-item .dropdown-item {
+        white-space: normal;
+    }
+
+    #home-carousel .carousel-item .carousel-overlay-1 {
+        display: none;
+    }
+
+    #home-carousel .carousel-item .carousel-overlay-2 {
+        border-top: 100vh solid rgba(72, 160, 137, 0.8);
+        border-right: 100px solid transparent;
+        width: 135%;
+    }
+
+    #home-carousel .carousel-item .content {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 50%;
+    }
+
+    @keyframes load-carousel {
+        0% {
+            opacity: 0;
+            left: 30%;
+        }
+        40% {
+            opacity: 0.1;
+        }
+        100% {
+            opacity: 1;
+            left: 50%;
+        }
+    }
+}
+
+
+/*=====================================================================*/
+
+.header > .row {
+    min-height: 120px;
+}
+
+.header .header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header .content {
+    z-index: 11;
+}
+
+.header .header-overlay-1 {
+    border-top: 120px solid #48a089;
+    border-right: 70px solid transparent;
+    width: 120%;
+}
+
+.header .header-overlay-2 {
+    border-top: 120px solid rgba(72, 160, 137, 0.4);
+    border-right: 70px solid transparent;
+    width: 135%;
+}
+
+.header .banner {
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#youth-justice .banner {
+    background-image: url('../img/case-law-min.jpg');
+    background-position: left;
+}
+
+#parenting-assessment .banner {
+    background-image: url('../img/family-min.jpg');
+    background-position: 0;
+}
+
+#child-care .banner {
+    background-image: url('../img/hammer-min.jpg');
+    background-position: right bottom;
+}
+
+#sos .banner {
+    background-image: url('../img/doctor.jpg');
+    background-position: right bottom;
+}
+
+.content p {
+    font-size: 1rem;
+}

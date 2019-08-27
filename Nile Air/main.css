@@ -1,0 +1,449 @@
+.arabic {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+.arabic.small {
+    font-size: 0.8rem !important;
+}
+
+.english {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
+                    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fa {
+    font-size: 24px;
+    vertical-align: sub;
+}
+
+.btn.btn-primary {
+    background: #003d7d;
+}
+
+.abs-mid {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.abs-mid-x {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.abs-mid-y {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.non-loader {
+    display: none;
+    opacity: 0;
+    transition: opacity ease-in 0.3s;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#loader .plane.fly {
+    top: -20px;
+    transition: top ease-out 1s;
+}
+
+#site-header {
+    background-attachment: fixed;
+    background-image: url('./airplane-bg-min.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.link-menu {
+    border-bottom: 1px solid #edeaf3;
+}
+
+.link-menu .menu-item a,
+.link-menu .menu-item a:hover {
+    color: #888;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.link-menu .menu-item a .fa {
+    font-size: 16px;
+}
+
+.nav-logo {
+    transition: width ease-in-out 0.3s;
+    width: 100px;
+}
+.menu .menu-item a {
+    color: #666;
+    font-weight: 300;
+    padding: 3px 0;
+    transition: border-bottom ease-in 0.1s;
+    width: 100%;
+}
+
+.menu .menu-item a:hover {
+    border-bottom: 3px solid #888;
+    color: #111;
+    text-decoration: none;
+}
+
+.menu .arabic {
+    font-size: 1.15rem;
+}
+
+.nav-toggler {
+    color: #666;
+}
+
+.nav-toggler:hover {
+    color: #111;
+    text-decoration: none;
+}
+
+.nav-toggler + .menu {
+    background: #edeaf3;
+    box-shadow: 1px 3px 2px #33333311;
+    right: 0;
+    width: 100%;
+}
+
+.nav-toggler + .menu ul {
+    list-style: none;
+}
+
+#tagline {
+    color: #555;
+    margin: 2rem 0 4rem 0;
+    padding: 2rem 0;
+}
+
+#tagline h3 {
+    font-size: 1.2rem;
+    transition: font-size ease-in-out 0.3s;
+}
+
+#tagline h1 {
+    font-size: 1.4rem;
+    transition: font-size ease-in-out 0.3s;
+}
+
+#sticky-nav {
+    background: #ededed;
+    position: fixed;
+    top: -1000px;
+    transition: top ease-in-out 0.3s;
+    z-index: 800;
+}
+
+#sticky-nav.active {
+    left: 0;
+    top: 0;
+}
+
+#sticky-nav .nav-toggler + .menu {
+    background: #f6f6f6;
+    box-shadow: 1px 3px 2px #11111122;
+}
+
+#booking-window .tab-pane {
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    box-shadow: 1px 3px 2px #33333311;
+}
+
+#booking-window .tab-pane .fa {
+    font-size: 26px;
+}
+
+#booking-window .tab-pane .arabic {
+    font-size: 1.15rem;
+}
+
+#booking-window .tab-pane .tab-bar {
+    background: #003d7d;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 1px 3px 2px #33333311;
+    padding-bottom: 2px;
+}
+
+#booking-window .tab-pane .tab-bar ul {
+    list-style: none;
+}
+
+#booking-window .tab-pane .tab-bar .tab-item a {
+    color: #ccc;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+}
+
+#booking-window .tab-pane .tab-bar .tab-item a:hover {
+    color: #ddd;
+}
+
+#booking-window .tab-pane .tab-bar .tab-item.active a {
+    color: #fff;
+    font-weight: 700;
+}
+
+#booking-window .tab-pane .tab-bar .tab-stick {
+    border: 2px solid #fff;
+    bottom: 0;
+    transition: left ease-in-out 0.3s;
+    width: 33.3333%;
+}
+#booking-window .tab-pane .tab-bar .curr-heading {
+    color: #fff;
+}
+
+#booking-window .tab-pane .tab-bar .tab-item .heading {
+    display: none;
+}
+
+#booking-window .tab-pane .tab-bar .tab-item-1.active ~ .tab-stick {
+    left: 0;
+}
+
+#booking-window .tab-pane .tab-bar .tab-item-2.active ~ .tab-stick {
+    left: 33.3333%;
+}
+
+#booking-window .tab-pane .tab-bar .tab-item-3.active ~ .tab-stick {
+    left: 66.6666%;
+}
+
+#booking-window .tab-pane .tabs-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#booking-window .tab-pane .tab-reel { 
+    flex: 1;
+    width: 300%;
+}
+
+#booking-window .tab-pane .tabs {
+    display: flex;
+    min-height: 320px;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+}
+
+#booking-window .tab-pane .tabs .tab {
+    height: 100%;
+    overflow-y: auto;
+    padding: 1rem 0.6rem;
+    width: 100%;
+}
+
+#booking-window .tab-pane .tabs .tab img {
+    max-height: 320px;
+    width: 100%;
+}
+
+#booking-window .tab-pane .tabs .tab .form-group i.fa {
+    background: #003d7d;
+    border-radius: 3px 0 0 3px;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 1px;
+} 
+
+#booking-window .tab-pane .tabs .tab .form-group .form-control.rtl {
+    border-radius: 3px 0 0 3px;
+}
+
+#booking-window .tab-pane .tabs .tab .form-group i.fa.rtl {
+    border-radius: 0 3px 3px 0;
+}
+
+
+#booking-window .tab-pane .tab .sub-tab-menu .nav-link,
+#booking-window .tab-pane .tab .sub-tab-menu .nav-link:hover {
+    color: #888;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+}
+
+#booking-window .tab-pane .tab .sub-tab-menu .nav-link .arabic {
+    font-size: 0.86rem;
+}
+
+#booking-window .tab-pane .tab .sub-tab-menu .nav-link.active {
+    color: #111;
+}
+
+#booking-window .tab-pane .tab .sub-tabs .tab {
+    display: none;
+}
+
+#booking-window .tab-pane .tab .sub-tabs .tab.active {
+    display: block;
+}
+
+
+.void.void-1 {
+    background-attachment: fixed;
+    background-image: url('./nileair-3-min.jpg');
+    background-position: center center;
+    background-size: 200%;
+}
+
+.void .overlay {
+    background: #003d7d66;
+    padding: 8rem 0;
+}
+
+#subscription {
+    background: #ddd;
+}
+
+#subscription i.fa {
+    font-size: 4rem;
+}
+
+#site-footer {
+    background: #003d7d;
+}
+
+#site-footer ul {
+    list-style: none;
+}
+
+#site-footer ul li {
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+#site-footer ul a,
+#site-footer ul a:hover {
+    color: #eee;
+}
+
+#site-footer ul li.heading {
+    margin-bottom: 0.5rem;
+}
+
+#site-footer ul li.heading a,
+#site-footer ul li.heading a:hover {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#site-footer .copy-wrapper {
+    border-top: 1px solid #aaa;
+    color: #eee;
+}
+
+#site-footer .copy-wrapper .text-right {
+    text-align: center !important;
+}
+
+#site-footer .copy-wrapper .text-left {
+    text-align: center !important;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #tagline {
+        margin: 2.5rem 0 4.5rem 0;
+        padding: 2.5rem 0;
+    }
+    
+    #tagline h3 {
+        font-size: 1.25rem;
+    }
+    
+    #tagline h1 {
+        font-size: 1.45rem;
+    }
+
+    #booking-window .tab-pane .tabs .tab .form-group i.fa {
+        font-size: 26px;
+        padding: 4px 5px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .nav-logo {
+        width: 110px;
+    }
+
+    #tagline {
+        margin: 3rem 0 5.5rem 0;
+        padding: 4rem 0;
+    }
+    
+    #tagline h3 {
+        font-size: 1.6rem;
+    }
+    
+    #tagline h1 {
+        font-size: 2rem;
+    }
+
+    #booking-window .tab-pane .tab-bar .tab-item .heading {
+        display: inline-block;
+    }
+
+    #booking-window .tab-pane .tab .sub-tab-menu .nav-link,
+    #booking-window .tab-pane .tab .sub-tab-menu .nav-link:hover {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .void.void-1 {
+        background-size: 120%;
+    }
+    
+    #site-footer .copy-wrapper .text-right {
+        text-align: right !important;
+    }
+
+    #site-footer .copy-wrapper .text-left {
+        text-align: left !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .nav-logo {
+        width: 120px;
+    }
+
+    #tagline {
+        margin: 3.5rem 0 6.5rem 0;
+        padding: 5rem 0;
+    }
+
+    #tagline h3 {
+        font-size: 2rem;
+    }
+    
+    #tagline h1 {
+        font-size: 2.4rem;
+    }
+
+    .void.void-1 {
+        background-size: 105%;
+    }
+
+    .void .overlay {
+        background: #003d7d66;
+        padding: 12rem 0;
+    }    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .nav-logo {
+        width: 145px;
+    }
+}

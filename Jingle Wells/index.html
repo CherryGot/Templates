@@ -1,0 +1,47 @@
+<html>
+    <style type="text/css">
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .canvas-content {
+            display: none;
+        }
+
+        .canvas-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+
+        #loading-page {
+            background-color: #bb1725;
+            height: 100%;
+            margin: 0;
+            width: 100%;
+        }
+    </style>
+<body>
+    <main>
+        <div class="canvas-content">
+            <img id="border" src="assets/border.png" />
+            <img id="jingle" src="assets/jingle-wells.png" />
+            <img id="well-blue" src="assets/well-blue.png" />
+            <img id="well-orange" src="assets/well-orange.png" />
+            <img id="progress" src="assets/progress.png" />
+            <img id="logo" src="assets/logo.png" />
+            <img id="snow-flake" src="assets/snow-flake.png" />
+            <img id="banner" src="assets/banner.png" />
+            <a id="redirect-to" href="https://www.lipsum.com/"></a>
+        </div>
+        <div class="canvas-wrapper">
+            <canvas id="loading-page"></canvas>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/2.4.3/fabric.min.js"></script>
+    <script src="canvas.js"></script>
+</body>
+</html>

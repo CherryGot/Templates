@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Itinerary</title>
+
+    <style type="text/css">
+        html,
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-image: url('img/Bangkok-city-guide.jpg');
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+        }
+        
+        main {
+            overflow-y: auto;
+            height: 100%;
+        }
+        
+        p {
+            margin: 0;
+        }
+        
+        .iti-wrapper {
+            background: #ffffffaa;
+        }
+        
+        .iti-wrapper .container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .text-link {
+            color: #111;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .masthead img {
+            width: 100%;
+            max-width: 650px;
+        }
+        
+        .masthead .skyline-wrapper .container {
+            position: relative;
+        }
+        
+        .masthead .skyline-wrapper .row {
+            position: absolute;
+            bottom: 0.5rem;
+            left: 50%;
+            transform: translateX(-47%);
+        }
+        
+        .skyline-wrapper p {
+            line-height: 1;
+        }
+        
+        .skyline-wrapper .days .rect {
+            background-color: #34a853;
+            color: #fff;
+            font-weight: 900;
+            font-size: 72px;
+            padding: 8px 15px;
+            display: inline-block;
+        }
+        
+        .skyline-wrapper .city .rect {
+            background-color: #1e8030;
+            color: #fff;
+            font-weight: 700;
+            font-size: 48px;
+            padding: 8px 15px;
+            display: inline-block;
+            width: 720px;
+        }
+        
+        .itinerary {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        
+        .itinerary .date p {
+            font-size: 30px;
+            font-weight: 700;
+        }
+        
+        .itinerary .weather img {
+            max-width: 48px;
+        }
+        
+        .itinerary .weather p {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .itinerary .heading {
+            padding: 0.5rem;
+            font-weight: 700;
+            color: #fff;
+            font-size: 20px;
+        }
+        
+        .itinerary .heading-1 {
+            background: #00abff;
+        }
+        
+        .itinerary .heading-2 {
+            background: #2aba60;
+        }
+        
+        .itinerary .heading-3 {
+            background: #f7941d;
+        }
+        
+        .itinerary .heading-4 {
+            background: #f26522;
+        }
+        
+        .itinerary .content {
+            padding-top: 15px;
+            padding-bottom: 100px;
+        }
+        
+        .itinerary .col-bg-1 {
+            background: #ebebeb;
+            padding: 0;
+            position: relative;
+        }
+        
+        .itinerary .col-bg-2 {
+            background: #e1e1e1;
+            padding: 0;
+            position: relative;
+        }
+        
+        .itinerary .content .subhead {
+            font-weight: 700;
+            font-size: 16px;
+        }
+        
+        .itinerary .content .details .col-8 {
+            color: #2aba60;
+        }
+        
+        .itinerary .illus {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .itinerary .illus img {
+            width: 80px;
+        }
+        
+        .itinerary .fa-map-marker-alt {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        
+        .notice {
+            background: #2aba60;
+            color: #fff;
+            font-weight: 500;
+        }
+        
+        .notice a {
+            color: #fff;
+        }
+        
+        @media screen and (max-width: 767px) {
+            .masthead .skyline-wrapper .row {
+                bottom: 0.5rem;
+                transform: translateX(-46%);
+            }
+            .skyline-wrapper .days .rect {
+                font-size: 36px;
+            }
+            .skyline-wrapper .city .rect {
+                font-size: 30px;
+                width: 450px;
+            }
+            .itinerary .date p {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="iti-wrapper">
+            <div class="container">
+
+                <section class="header">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4 text-center text-sm-left">
+                            <a href="http://sunleisureworld.com"><img src="img/logo.png" alt="SunLeisureWorld.com" /></a>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-8 text-center text-sm-right">
+                            <a class="d-none d-sm-block text-link" href="http://sunleisureworld.com">www.sunleisureworld.com</a>
+                            <div class="mt-1">
+                                <p>Itinerary No.: <span class="value">0966</span></p>
+                                <p>Customer Name: <span class="value">John Smith</span></p>
+                                <p>Dates from: <span class="value">24 April, 2019</span></p>
+                                <p>to: <span class="value">26 April, 2019</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="masthead">
+                    <div class="skyline-wrapper">
+                        <center class="container">
+                            <img src="img/skyline.png" />
+
+                            <div class="row">
+                                <div class="col-12 days">
+                                    <div class="rect text-center">
+                                        <p>3 DAYS</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 city">
+                                    <div class="rect text-center">
+                                        <p>IN BANGKOK CITY</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </center>
+                    </div>
+
+                </section>
+
+                <section class="itinerary">
+                    <div class="row">
+                        <div class="col-6 date">
+                            <p>24 April, 2019</p>
+                        </div>
+
+                        <div class="col-6 weather text-right">
+                            <div class="row">
+                                <div class="col-12"><img src="img/sun.png" />
+                                </div>
+                                <div class="col-12">
+                                    <p>Mostly Sunny</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-bg-1">
+                            <div class="heading heading-1 text-center">
+                                <p>Airport Arrival</p>
+                            </div>
+                            <div class="content text-center">
+                                <p class="subhead ml-5 mr-5">Land at Suvarnabhumi Airport, Bangkok</p>
+
+                                <div class="details container">
+                                    <div class="row">
+                                        <div class="col-4 text-right"><i class="fa fa-clock"></i>
+                                        </div>
+                                        <div class="col-8 text-left">01:00 PM
+                                        </div>
+                                        <div class="col-4 text-right"><i class="fa fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">Gate 3, Terminal 1
+                                        </div>
+                                        <div class="col-4 text-right"><i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">+66814409926
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="illus">
+                                <img src="img/airport-pngrepo-comp.png" /></div>
+                        </div>
+                        <div class="col-12 col-md-4 col-bg-2">
+                            <div class="heading heading-2 text-center">
+                                <p>Lunch / Dinner</p>
+                            </div>
+                            <div class="content text-center">
+                                <p class="subhead ml-5 mr-5">Caffeine Imperial Inn</p>
+
+                                <div class="details container">
+                                    <div class="row">
+                                        <div class="col-4 text-right"><i class="fa fa-clock"></i>
+                                        </div>
+                                        <div class="col-8 text-left">02:00 PM
+                                        </div>
+                                        <div class="col-4 text-right"><i class="fa fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">ABC Street, XYC Circle, Bangkok
+                                        </div>
+                                        <div class="col-4 text-right"><i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">+66814409926
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="illus">
+                                <img src="img/hotel-pngrepo-com.png" /></div>
+                        </div>
+                        <div class="col-12 col-md-4 col-bg-1">
+                            <div class="heading heading-4 text-center">
+                                <p>Hotel Stay</p>
+                            </div>
+                            <div class="content text-center">
+                                <p class="subhead ml-5 mr-5">Stay overnight at Caffeine Imperial Inn</p>
+
+                                <div class="details container">
+                                    <div class="row">
+                                        <div class="col-4 text-right"><i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">+66814409926
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="illus">
+                                <img src="img/img_493528.png" /></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="itinerary">
+                    <div class="row">
+                        <div class="col-6 date">
+                            <p>25 April, 2019</p>
+                        </div>
+
+                        <div class="col-6 weather text-right">
+                            <div class="row">
+                                <div class="col-12"><img src="img/cloud-sun.png" />
+                                </div>
+                                <div class="col-12">
+                                    <p>Partly Sunny</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 col-bg-1">
+                            <div class="heading heading-1 text-center">
+                                <p>Breakfast</p>
+                            </div>
+                            <div class="content text-center">
+                                <p class="subhead ml-5 mr-5">Breakfast at Caffeine Imperial Inn
+                                </p>
+
+                                <div class="details container">
+                                    <div class="row">
+                                        <div class="col-4 text-right"><i class="fa fa-clock"></i>
+                                        </div>
+                                        <div class="col-8 text-left">09:00 AM
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="illus">
+                                <img src="img/dinner-pngrepo-com.png" /></div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 col-bg-2">
+                            <div class="heading heading-2 text-center">
+                                <p>Sightseeing</p>
+                            </div>
+                            <div class="content text-center">
+                                <p class="subhead ml-5 mr-5">Half day tour to Coral Island Pattaya</p>
+
+                                <div class="details container">
+                                    <div class="row">
+                                        <div class="col-4 text-right"><i class="fa fa-clock"></i>
+                                        </div>
+                                        <div class="col-8 text-left">10:00 AM
+                                        </div>
+                                        <div class="col-4 text-right"><i class="fa fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">Lobby of the Hotel
+                                        </div>
+                                        <div class="col-4 text-right"><i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">+66814409926
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="illus">
+                                <img src="img/van-pngrepo-com.png" /></div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 col-bg-1">
+                            <div class="heading heading-3 text-center">
+                                <p>Lunch</p>
+                            </div>
+                            <div class="content text-center">
+                                <p class="subhead ml-5 mr-5">Lunch with transfer, without transfer or Indian Meal</p>
+
+                                <div class="details container">
+                                    <div class="row">
+                                        <div class="col-4 text-right"><i class="fa fa-clock"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">01:30 PM
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="illus">
+                                <img src="img/dinner-pngrepo-com.png" /></div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 col-bg-2">
+                            <div class="heading heading-4 text-center">
+                                <p>Hotel Stay</p>
+                            </div>
+                            <div class="content text-center">
+                                <p class="subhead ml-5 mr-5">Stay overnight at Caffeine Imperial Inn</p>
+
+                                <div class="details container">
+                                    <div class="row">
+                                        <div class="col-4 text-right"><i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">+66814409926
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="illus">
+                                <img src="img/img_493528.png" /></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="itinerary">
+                    <div class="row">
+                        <div class="col-6 date">
+                            <p>26 April, 2019</p>
+                        </div>
+
+                        <div class="col-6 weather text-right">
+                            <div class="row">
+                                <div class="col-12"><img src="img/sun.png" />
+                                </div>
+                                <div class="col-12">
+                                    <p>Mostly Sunny</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-bg-1">
+                            <div class="heading heading-1 text-center">
+                                <p>Breakfast</p>
+                            </div>
+                            <div class="content text-center">
+                                <p class="subhead ml-5 mr-5">Breakfast at Caffeine Imperial Inn
+                                </p>
+
+                                <div class="details container">
+                                    <div class="row">
+                                        <div class="col-4 text-right"><i class="fa fa-clock"></i>
+                                        </div>
+                                        <div class="col-8 text-left">09:00 AM
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="illus">
+                                <img src="img/dinner-pngrepo-com.png" /></div>
+                        </div>
+                        <div class="col-12 col-md-4 col-bg-2">
+                            <div class="heading heading-2 text-center">
+                                <p>Airport Transfer</p>
+                            </div>
+                            <div class="content text-center">
+                                <p class="subhead ml-5 mr-5">Transfer to Bangkok by VAN</p>
+
+                                <div class="details container">
+                                    <div class="row">
+                                        <div class="col-4 text-right"><i class="fa fa-clock"></i>
+                                        </div>
+                                        <div class="col-8 text-left">10:00 AM
+                                        </div>
+                                        <div class="col-4 text-right"><i class="fa fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">Lobby of the Hotel
+                                        </div>
+                                        <div class="col-4 text-right"><i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">+66814409926
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="illus">
+                                <img src="img/van-pngrepo-com.png" /></div>
+                        </div>
+                        <div class="col-12 col-md-4 col-bg-1">
+                            <div class="heading heading-4 text-center">
+                                <p>Hotel Stay</p>
+                            </div>
+                            <div class="content text-center">
+                                <p class="subhead ml-5 mr-5">Apex Grand Hotel</p>
+
+                                <div class="details container">
+                                    <div class="row">
+                                        <div class="col-4 text-right"><i class="fa fa-clock"></i>
+                                        </div>
+                                        <div class="col-8 text-left">02:00 PM
+                                        </div>
+                                        <div class="col-4 text-right"><i class="fa fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">PQR Street, XAC Circle, Bangkok
+                                        </div>
+                                        <div class="col-4 text-right"><i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="col-8 text-left mt-1">+66814409926
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="illus">
+                                <img src="img/hotel-pngrepo-com.png" /></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="notice mt-5 mb-5 p-3 text-center">
+                    <p>Learn more about this itinerary and 80+ included attraction options at <a href="http://sunleisureworld.com">www.sunleisureworld.com</a></p>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
