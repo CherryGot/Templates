@@ -378,19 +378,15 @@
     max-width:420px;
     margin:4rem auto
 }
-.grade{
-    height: 100%;
-    width:85%;
-    border:12px solid red;
-    border-radius:50%;
-    position:relative
+
+.percent {
+    text-align: center;
+    font-size: 1.6rem;
 }
-.grade p{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translateX(-50%) translateY(-50%);
-    color:red;
-    font-size:4rem;
-    margin:0
+
+.verdict {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 700;
 }
