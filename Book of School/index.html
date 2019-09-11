@@ -1,0 +1,1039 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Home | Book of Schools</title>
+
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<link rel="icon" href="assets/img/favicon.ico" />
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" type="text/css"  />
+	<link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+	<link rel="stylesheet" href="assets/css/material-kit.min.css"/>
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+	<div class="content">
+		
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img class="h-100 d-none d-md-block" src="assets/img/logo.png" />
+					<img class="h-100 d-md-none" src="assets/img/logo-mob.png" />
+				</a>
+
+				<ul class="navbar-nav d-lg-none ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">中文</a>
+					</li>
+				</ul>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"></span>
+				</button>	
+
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav w-100">
+						
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="school-types" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Schools
+							</a>
+							<div class="dropdown-menu" aria-labelledby="school-types">
+								<a class="dropdown-item" href="#">Kid Education</a>
+								<a class="dropdown-item" href="#">Kindergarten</a>
+								<a class="dropdown-item" href="#">Primary</a>
+								<a class="dropdown-item" href="#">Secondary</a>
+								<a class="dropdown-item" href="#">IB School</a>
+							</div>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Cases</a>
+						</li>
+
+						<li class="nav-item dropdown new-tag">
+							<a class="nav-link dropdown-toggle" href="#" id="ranking-types" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Ranking
+							</a>
+							<div class="dropdown-menu" aria-labelledby="ranking-types">
+								<a class="dropdown-item new-tag" href="#">Most Popular Primary Schools</a>
+								<a class="dropdown-item" href="#">Kindergarten Ranking</a>
+								<a class="dropdown-item" href="#">Primary School Ranking</a>
+								<a class="dropdown-item" href="#">Secondary School Ranking</a>
+							</div>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="tool-types" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Tools
+							</a>
+							<div class="dropdown-menu" aria-labelledby="tool-types">
+								<a class="dropdown-item" href="#">Calendar</a>
+								<a class="dropdown-item" href="#">Kindergarten Placement Result Summary</a>
+								<a class="dropdown-item" href="#">Primary School Placement Result Summary</a>
+								<a class="dropdown-item" href="#">Reverse Search</a>
+								<a class="dropdown-item" href="#">School Compare</a>
+							</div>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Forum</a>
+						</li>
+
+						<li class="mx-auto"></li>
+						
+						<li class="nav-item d-none d-lg-block">
+							<a class="nav-link" href="#">中文</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Login</a>
+						</li>
+
+						<li class="nav-item d-none d-lg-block">
+							<a class="btn btn-primary btn-round" href="#">Register</a>
+						</li>
+
+						<li class="nav-item d-lg-none">
+							<a class="nav-link" href="#">Register</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section id="search-section" class="bs-section img-section">
+			<div class="content">
+				<div class="container">
+					<h2 class="text-white text-center title mb-0">Hong Kong's Most Popular School Guide</h2>
+					<h4 class="text-white text-center font-weight-normal">with School Search, Reviews, Comparison and many more...</h4>
+
+					<div class="text-center search-form-wrapper">
+						<div class="card mb-2">
+							<div class="card-body p-0 pt-3 pb-1">
+								<!--form-->
+								<div class="search-forms">
+									<div class="row form form-1 active">
+										<div class="col-12 col-sm-8 col-md-9">
+											<div class="form-group">
+												<label for="search-text-input">School Name, Type, Location</label>
+												<input type="text" class="form-control" id="search-text-input" placeholder="Enter Query Here...">
+											</div>
+										</div>
+										<div class="d-none d-sm-block col-sm-4 col-md-3 text-right">
+											<a class="btn btn-primary btn-round text-white mt-sm-4">Search</a>
+										</div>
+
+										<div class="col-12 d-sm-none text-center">
+											<a class="btn btn-primary btn-round text-white mt-sm-4">Search</a>
+										</div>
+									</div>
+
+									<div class="row form form-2">
+											<div class="col-12 col-md-4">
+												<div class="form-group">
+													<label for="school-type-input">School Type</label>
+													<select class="form-control" id="school-type-input">
+														<option default>Choose a School Type</option>
+														<option>1</option>
+														<option>1</option>
+														<option>1</option>
+														<option>1</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-12 col-md-5">
+												<div class="form-group">
+													<label for="school-name-input">School Name, Type, Location</label>
+													<select class="form-control" id="school-name-input">
+														<option default>School Names</option>
+														<option>1</option>
+														<option>1</option>
+														<option>1</option>
+														<option>1</option>
+													</select>
+												</div>
+											</div>
+											<div class="d-none d-md-block col-md-3 text-right">
+												<a class="btn btn-primary btn-round text-white mt-sm-4">Search</a>
+											</div>
+	
+											<div class="col-12 d-md-none text-center">
+												<a class="btn btn-primary btn-round text-white mt-sm-4">Search</a>
+											</div>
+									</div>
+								</div>
+								<!--/form-->
+							</div>
+						</div>
+
+						<div class="text-right mr-2">
+							<a class="link-btn rev-search-btn" href="javascript:;">Reverse Search</a>
+							<a class="link-btn d-none std-search-btn" href="javascript:;">Standard Search</a>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bs-section">
+			<div class="container">
+				<div class="my-5 py-5">
+					<div class="row my-4">
+						<div class="col col-12 col-lg-9">
+							<div class="card mb-0">
+								<div class="card-header card-header-text custom-card-header">
+									<div class="card-text">
+										<div class="d-flex">
+											<div class="mr-auto">
+												<h3 class="card-title m-0">Calendar</h3>
+												<p class="card-subtitle">Events that will occur in the next few months</p>
+											</div>
+											
+											<div class="d-none d-sm-block">
+												<a class="btn btn-primary" href="javascript:;">View All</a>
+												<!--a class="btn btn-accent btn-round" href="javascript:;">New Event</a-->
+											</div>
+
+											<div class="d-sm-none">
+													<a class="dropdown-toggle text-white" href="#" id="calendar-menu-items" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+													<div class="dropdown-menu" aria-labelledby="calendar-menu-items">
+														<a class="dropdown-item" href="#">View All</a>
+														<!--a class="dropdown-item" href="#">New Event</a-->
+													</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="card-body mt-2">
+									<table class="w-100">
+										<thead>
+											<tr>
+												<th class="date">Start Date</th>
+												<th class="date">End Date</th>
+												<th>Important Announcement</th>
+												<th class="day">Time Left</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr>
+													<td>09 Aug 2019</td>
+													<td>01 Oct 2019</td>
+													<td class="notice">
+														<a href="#">Applications for 2020-21 Foundation Year Program</a>
+													</td>
+													<td>21 Days</td>
+												</tr>
+												<tr>
+													<td>19 Oct 2019</td>
+													<td>20 Oct 2019</td>
+													<td class="notice new-tag">
+														<a href="#">Lingnan University Hong Kong Alumni Association Primary School 2019-2020 Open Day and Course Introduction Lecture...</a>
+													</td>
+													<td>39 Days</td>
+												</tr>
+											<tr>
+												<td>09 Aug 2019</td>
+												<td>01 Oct 2019</td>
+												<td class="notice">
+													<a href="#">Applications for 2020-21 Foundation Year Program</a>
+												</td>
+												<td>21 Days</td>
+											</tr>
+											<tr>
+												<td>19 Oct 2019</td>
+												<td>20 Oct 2019</td>
+												<td class="notice">
+													<a href="#">Lingnan University Hong Kong Alumni Association Primary School 2019-2020 Open Day and Course Introduction Lecture...</a>
+												</td>
+												<td>39 Days</td>
+											</tr>
+											<tr>
+												<td>09 Aug 2019</td>
+												<td>01 Oct 2019</td>
+												<td class="notice new-tag">
+													<a href="#">Applications for 2020-21 Foundation Year Program</a>
+												</td>
+												<td>21 Days</td>
+											</tr>
+											<tr>
+												<td>19 Oct 2019</td>
+												<td>20 Oct 2019</td>
+												<td class="notice new-tag">
+													<a href="#">Lingnan University Hong Kong Alumni Association Primary School 2019-2020 Open Day and Course Introduction Lecture...</a>
+												</td>
+												<td>39 Days</td>
+											</tr>
+										</tbody>
+									</table>		
+								</div>
+							</div>
+						</div>
+						<div class="col d-none d-lg-block col-lg-3">
+							<div class="d-flex bg-light h-100 p-5">
+								<h4 class="text-center align-self-center w-100">Ad Goes Here...</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="top-searches" class="bs-section bg-light">
+			<div class="container py-5">
+				<div class="py-5">
+						<div class="card card-nav-tabs mt-5">
+							<div class="card-header card-header-text custom-card-header">
+									<div class="card-text mb-2">
+										<div class="d-flex">
+											<div class="mr-auto">
+												<h3 class="card-title m-0">Top Searches</h3>
+											</div>
+
+											<div class="d-none d-sm-flex">
+													<div class="form-check form-check-radio mt-2 mr-3">
+														<label class="form-check-label text-white">
+																<input class="form-check-input" type="radio" name="timings" id="last-week" value="last-week" checked />
+																last week
+																<span class="circle">
+																		<span class="check"></span>
+																</span>
+														</label>
+													</div>
+			
+														<div class="form-check form-check-radio mt-2 mr-3">
+															<label class="form-check-label text-white">
+																	<input class="form-check-input" type="radio" name="timings" id="last-month" value="last-month" />
+																	last month
+																	<span class="circle">
+																			<span class="check"></span>
+																	</span>
+															</label>
+														</div>
+			
+														<div class="form-check form-check-radio mt-2">
+															<label class="form-check-label text-white">
+																<input class="form-check-input" type="radio" name="timings" id="all-time" value="all-time" />
+																all
+																<span class="circle">
+																		<span class="check"></span>
+																</span>
+														</label>
+													</div>
+											</div>
+
+											<div class="d-sm-none">
+													<a class="dropdown-toggle text-white" href="#" id="calender-menu-items" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+													<div class="dropdown-menu px-2" aria-labelledby="calender-menu-items">
+															<div class="form-check form-check-radio mt-2 mr-3">
+																	<label class="form-check-label">
+																			<input class="form-check-input" type="radio" name="timings" id="last-week" value="last-week" checked />
+																			last week
+																			<span class="circle">
+																					<span class="check"></span>
+																			</span>
+																	</label>
+																</div>
+						
+																	<div class="form-check form-check-radio mt-2 mr-3">
+																		<label class="form-check-label">
+																				<input class="form-check-input" type="radio" name="timings" id="last-month" value="last-month" />
+																				last month
+																				<span class="circle">
+																						<span class="check"></span>
+																				</span>
+																		</label>
+																	</div>
+						
+																	<div class="form-check form-check-radio mt-2">
+																		<label class="form-check-label">
+																			<input class="form-check-input" type="radio" name="timings" id="all-time" value="all-time" />
+																			all
+																			<span class="circle">
+																					<span class="check"></span>
+																			</span>
+																	</label>
+																</div>
+													</div>
+											</div>
+
+											
+										</div>
+									</div>
+									<div class="nav-tabs-navigation">
+											<div class="nav-tabs-wrapper">
+													<ul class="nav nav-tabs" data-tabs="tabs">
+															<li class="nav-item">
+																	<a class="nav-link active" href="#kindergarten-searches" data-toggle="tab">Kindergarten</a>
+															</li>
+															<li class="nav-item">
+																	<a class="nav-link" href="#primary-searches" data-toggle="tab">Primary</a>
+															</li>
+															<li class="nav-item">
+																	<a class="nav-link" href="#secondary-searches" data-toggle="tab">Secondary</a>
+															</li>
+															<li class="nav-item">
+																	<a class="nav-link" href="#rating-searches" data-toggle="tab">Parent Reviews</a>
+															</li>
+													</ul>
+											</div>
+									</div>
+							</div>
+							<div class="card-body mt-2">
+								<div class="tab-content text-center">
+										<div class="tab-pane active" id="kindergarten-searches">
+											<table class="w-100">
+												<thead>
+													<tr>
+														<th class="day"></th>
+														<th class="text-left">Name</th>
+														<th class="day">Enrollment Estimation</th>
+														<th class="day">Parent Ratings</th>
+														<th class="day">Views</th>
+													</tr>
+												</thead> 
+												<tbody>
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_1.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Private Independent</span>
+																<p class="mb-0">聖公會基恩小學 </p>
+																<p class="mb-0">S.K.H. Kei Yan Primary School</p>
+															</a>
+														</td>
+														<td>24</td>
+														<td>8.0</td>
+														<td>1689489</td>
+													</tr>
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_2.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Profit</span>
+																<p class="mb-0">保良局陳守仁小學</p>
+																<p class="mb-0">P.L.K. Camões Tan Siu Lin Primary School</p>
+															</a>
+														</td>
+														<td>357</td>
+														<td>9.0</td>
+														<td>99489</td>
+													</tr>
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_3.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Non Profit</span>
+																<p class="mb-0">英華小學 </p>
+																<p class="mb-0">Ying Wa Primary School</p>
+															</a>
+														</td>
+														<td>253</td>
+														<td>9.0</td>
+														<td>75489</td>
+													</tr>
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_1.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Private Independent</span>
+																<p class="mb-0">聖公會基恩小學 </p>
+																<p class="mb-0">S.K.H. Kei Yan Primary School</p>
+															</a>
+														</td>
+														<td>24</td>
+														<td>8.0</td>
+														<td>1689489</td>
+													</tr>
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_2.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Profit</span>
+																<p class="mb-0">保良局陳守仁小學</p>
+																<p class="mb-0">P.L.K. Camões Tan Siu Lin Primary School</p>
+															</a>
+														</td>
+														<td>357</td>
+														<td>9.0</td>
+														<td>99489</td>
+													</tr>
+												</tbody>
+											</table>		
+										</div>
+										<div class="tab-pane" id="primary-searches">
+												<table class="w-100">
+												<thead>
+													<tr>
+														<th class="day"></th>
+														<th class="text-left">Name</th>
+														<th class="day">Enrollment Estimation</th>
+														<th class="day">Parent Ratings</th>
+														<th class="day">Views</th>
+													</tr>
+												</thead> 
+												<tbody>
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_1.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Private Independent</span>
+																<p class="mb-0">聖公會基恩小學 </p>
+																<p class="mb-0">S.K.H. Kei Yan Primary School</p>
+															</a>
+														</td>
+														<td>24</td>
+														<td>8.0</td>
+														<td>1689489</td>
+													</tr>
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_2.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Profit</span>
+																<p class="mb-0">保良局陳守仁小學</p>
+																<p class="mb-0">P.L.K. Camões Tan Siu Lin Primary School</p>
+															</a>
+														</td>
+														<td>357</td>
+														<td>9.0</td>
+														<td>99489</td>
+													</tr>
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_3.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Non Profit</span>
+																<p class="mb-0">英華小學 </p>
+																<p class="mb-0">Ying Wa Primary School</p>
+															</a>
+														</td>
+														<td>253</td>
+														<td>9.0</td>
+														<td>75489</td>
+													</tr>
+													
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_2.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Profit</span>
+																<p class="mb-0">保良局陳守仁小學</p>
+																<p class="mb-0">P.L.K. Camões Tan Siu Lin Primary School</p>
+															</a>
+														</td>
+														<td>357</td>
+														<td>9.0</td>
+														<td>99489</td>
+													</tr>
+													<tr>
+															<td class="school-logo">
+																<img class="img-fluid" src="assets/img/school_logo_1.jpg"/>
+															</td>
+															<td class="text-left">
+																<a href="#">
+																	<span class="badge badge-primary">Private Independent</span>
+																	<p class="mb-0">聖公會基恩小學 </p>
+																	<p class="mb-0">S.K.H. Kei Yan Primary School</p>
+																</a>
+															</td>
+															<td>24</td>
+															<td>8.0</td>
+															<td>1689489</td>
+														</tr>
+												</tbody>
+											</table>	
+										</div>
+										<div class="tab-pane" id="secondary-searches">
+												<table class="w-100">
+												<thead>
+													<tr>
+														<th class="day"></th>
+														<th class="text-left">Name</th>
+														<th class="day">Enrollment Estimation</th>
+														<th class="day">Parent Ratings</th>
+														<th class="day">Views</th>
+													</tr>
+												</thead> 
+												<tbody>
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_1.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Private Independent</span>
+																<p class="mb-0">聖公會基恩小學 </p>
+																<p class="mb-0">S.K.H. Kei Yan Primary School</p>
+															</a>
+														</td>
+														<td>24</td>
+														<td>8.0</td>
+														<td>1689489</td>
+													</tr>
+
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_2.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Profit</span>
+																<p class="mb-0">保良局陳守仁小學</p>
+																<p class="mb-0">P.L.K. Camões Tan Siu Lin Primary School</p>
+															</a>
+														</td>
+														<td>357</td>
+														<td>9.0</td>
+														<td>99489</td>
+													</tr>
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_2.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Profit</span>
+																<p class="mb-0">保良局陳守仁小學</p>
+																<p class="mb-0">P.L.K. Camões Tan Siu Lin Primary School</p>
+															</a>
+														</td>
+														<td>357</td>
+														<td>9.0</td>
+														<td>99489</td>
+													</tr>
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_3.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Non Profit</span>
+																<p class="mb-0">英華小學 </p>
+																<p class="mb-0">Ying Wa Primary School</p>
+															</a>
+														</td>
+														<td>253</td>
+														<td>9.0</td>
+														<td>75489</td>
+													</tr>
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_1.jpg"/>
+														</td>
+														<td class="text-left">
+															<a href="#">
+																<span class="badge badge-primary">Private Independent</span>
+																<p class="mb-0">聖公會基恩小學 </p>
+																<p class="mb-0">S.K.H. Kei Yan Primary School</p>
+															</a>
+														</td>
+														<td>24</td>
+														<td>8.0</td>
+														<td>1689489</td>
+													</tr>
+												</tbody>
+											</table>		
+										</div>
+										<div class="tab-pane" id="rating-searches">
+											<table class="w-100">
+												<thead>
+													<th class="day"></th>
+													<th></th>
+													<th class="day"></th>
+												</thead>
+												<tbody class="text-left">
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_1.jpg">
+														</td>
+														<td>
+															Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam.
+														</td>
+														<td>
+															<small>7 hours ago</small>
+														</td>
+													</tr>
+
+													<tr>
+														<td class="school-logo">
+															<img class="img-fluid" src="assets/img/school_logo_2.jpg">
+														</td>
+														<td>
+															Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam. Et dolore magna aliqua, ut enim ad minim veniam...
+														</td>
+														<td>
+															<small>12 hours ago</small>
+														</td>
+													</tr>
+
+													<tr>
+															<td class="school-logo">
+																<img class="img-fluid" src="assets/img/school_logo_3.jpg">
+															</td>
+															<td>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam. Et dolore magna aliqua, ut enim ad minim veniam...
+															</td>
+															<td>
+																<small>14 hours ago</small>
+															</td>
+														</tr>
+														<tr>
+																<td class="school-logo">
+																	<img class="img-fluid" src="assets/img/school_logo_1.jpg">
+																</td>
+																<td>
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam.
+																</td>
+																<td>
+																	<small>7 hours ago</small>
+																</td>
+															</tr>
+		
+															<tr>
+																<td class="school-logo">
+																	<img class="img-fluid" src="assets/img/school_logo_2.jpg">
+																</td>
+																<td>
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam. Et dolore magna aliqua, ut enim ad minim veniam...
+																</td>
+																<td>
+																	<small>12 hours ago</small>
+																</td>
+															</tr>
+		
+															<tr>
+																	<td class="school-logo">
+																		<img class="img-fluid" src="assets/img/school_logo_3.jpg">
+																	</td>
+																	<td>
+																		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam. Et dolore magna aliqua, ut enim ad minim veniam...
+																	</td>
+																	<td>
+																		<small>14 hours ago</small>
+																	</td>
+																</tr>
+															<tr>
+																	<td class="school-logo">
+																		<img class="img-fluid" src="assets/img/school_logo_3.jpg">
+																	</td>
+																	<td>
+																		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam. Et dolore magna aliqua, ut enim ad minim veniam...
+																	</td>
+																	<td>
+																		<small>14 hours ago</small>
+																	</td>
+																</tr>
+												</tbody>
+											</table>	
+										</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bs-section">
+			<div class="container">
+				<div class="py-5">
+					<div class="row my-5">
+						<div class="col col-12 col-lg-9">
+								<div id="carousel" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carousel" data-slide-to="0" class="active"></li>
+										<li data-target="#carousel" data-slide-to="1"></li>
+										<li data-target="#carousel" data-slide-to="2"></li>
+										<li data-target="#carousel" data-slide-to="3"></li>
+										<li data-target="#carousel" data-slide-to="4"></li>
+										<li data-target="#carousel" data-slide-to="5"></li>
+										<li data-target="#carousel" data-slide-to="6"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="assets/img/carousel-1.png" alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="assets/img/carousel-2.jpg" alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="assets/img/carousel-3.jpg" alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="assets/img/carousel-4.jpg" alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="assets/img/carousel-5.jpg" alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="assets/img/carousel-6.jpg" alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="assets/img/carousel-7.jpg" alt="First slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+						</div>
+						<div class="col d-none d-lg-block col-lg-3">
+							<div class="d-flex bg-light h-100 p-5">
+								<h4 class="text-center align-self-center w-100">Ad Goes Here...</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bs-section bg-light">
+			<div class="container py-5">
+				<div class="py-5">
+					<h3 class="title">Latest Posts</h3>
+
+					<div class="row">
+						<div class="col col-12 col-md-6 col-lg-4">
+							<div class="card mb-3">
+								<img class="card-img-top" src="assets/img/front-cover.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Impressed by Sincerity</h4>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<p class="card-text"><small class="text-muted">Author: <a href="#">Joe Hahn</a> | Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-12 col-md-6 col-lg-4">
+							<div class="card mb-3">
+								<img class="card-img-top" src="assets/img/front-cover-1.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Impressed by Sincerity</h4>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<p class="card-text"><small class="text-muted">Author: <a href="#">Joe Hahn</a> | Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-12 col-md-6 col-lg-4">
+							<div class="card mb-3">
+								<img class="card-img-top" src="assets/img/front-cover-1.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Impressed by Sincerity</h4>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<p class="card-text"><small class="text-muted">Author: <a href="#">Joe Hahn</a> | Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-12 col-md-6 col-lg-4">
+							<div class="card mb-3">
+								<img class="card-img-top" src="assets/img/carousel-2.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Impressed by Sincerity</h4>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<p class="card-text"><small class="text-muted">Author: <a href="#">Joe Hahn</a> | Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-12 col-md-6 col-lg-4">
+							<div class="card mb-3">
+								<img class="card-img-top" src="assets/img/carousel-3.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Impressed by Sincerity</h4>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<p class="card-text"><small class="text-muted">Author: <a href="#">Joe Hahn</a> | Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-12 col-md-6 col-lg-4">
+							<div class="card mb-3">
+								<img class="card-img-top" src="assets/img/carousel-4.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Impressed by Sincerity</h4>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<p class="card-text"><small class="text-muted">Author: <a href="#">Joe Hahn</a> | Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="bs-section">
+			<div class="container">
+				<div class="py-5">
+					<div class="row">
+						<div class="col col-12 col-lg-7 mb-3 m-lg-0">
+							<div class="row">
+									<div class="col col-12 col-md-4">
+										<div class="text-center p-2">
+											<i class="fa fa-home counter-icon"></i>
+											<p><span class="counter" data-count="951">0</span> Kindergartens</p>
+										</div>
+									</div>
+									<div class="col col-12 col-md-4">
+										<div class="text-center p-2">
+											<i class="fa fa-building counter-icon"></i>
+											<p><span class="counter" data-count="517">0</span> Primary Schools</p>
+										</div>
+									</div>
+									<div class="col col-12 col-md-4">
+										<div class="text-center p-2">
+											<i class="fa fa-institution counter-icon"></i>
+											<p><span class="counter" data-count="456">0</span> Secondary Schools</p>
+										</div>
+									</div>
+									<div class="col col-6 col-md-3">
+										<div class="text-center p-2">
+											<i class="fa fa-star-o counter-icon"></i>
+											<p><span class="counter" data-count="167772">0</span> Parent Ratings</p>
+										</div>
+									</div>
+									<div class="col col-6 col-md-3">
+										<div class="text-center p-2">
+											<i class="fa fa-users counter-icon"></i>
+											<p><span class="counter" data-count="11648">0</span> Parents Registered</p>
+										</div>
+									</div>
+									<div class="col col-6 col-md-3">
+										<div class="text-center p-2">
+											<i class="fa fa-user counter-icon"></i>
+											<p><span class="counter" data-count="52">0</span> Registered Instructors</p>
+										</div>
+									</div>
+									<div class="col col-6 col-md-3">
+										<div class="text-center p-2">
+											<i class="fa fa-eye mb-3"></i>
+											<p><span class="counter" data-count="112810032">0</span> Views</p>
+										</div>
+									</div>
+								</div>
+						
+						</div>
+						<div class="col col-12 col-lg-5 text-center">
+								<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/bookofschool" data-hide-cover="false" data-show-facepile="true" data-show-posts="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=263990090354164&amp;container_width=317&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fbookofschool&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false">
+									<iframe name="f2572540c650ab4" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.5/plugins/page.php?app_id=263990090354164&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df29588ac5731a9%26domain%3Dwww.bookofschool.com%26origin%3Dhttps%253A%252F%252Fwww.bookofschool.com%252Ff38adf1b53429fc%26relation%3Dparent.parent&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fbookofschool&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false" style="border: none; visibility: visible; width: 300px; height: 181px;" class=""></iframe>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bs-section bg-dark">
+			<div class="container">
+				<div class="pt-5">
+					<div class="row text-left">
+						<div class="col-6 col-md-4 col-lg-2">
+							<h5 class="m-0">Book of School</h5>
+
+							<ul class="list-style-none">
+								<li><a href="#"><small>Kindergarten</small></a></li>
+								<li><a href="#"><small>Primary School</small></a></li>
+								<li><a href="#"><small>Secondary School</small></a></li>
+								<li><a href="#"><small>International School</small></a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-md-4 col-lg-2">
+							<h5 class="m-0">Results</h5>
+
+							<ul class="list-style-none">
+								<li><a href="#"><small>Kindergarten Result</small></a></li>
+								<li><a href="#"><small>Primary School Result</small></a></li>
+								<li><a href="#"><small>Pvt & DSS School Application info</small></a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-md-4 col-lg-2">
+							<h5 class="m-0">Forum</h5>
+
+							<ul class="list-style-none">
+								<li><a href="#"><small>Ask Question</small></a></li>
+								<li><a href="#"><small>Hot Topic</small></a></li>
+								<li><a href="#"><small>Kindergarten</small></a></li>
+								<li><a href="#"><small>Primary</small></a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-md-4 col-lg-2">
+							<h5 class="m-0">Tools</h5>
+
+							<ul class="list-style-none">
+								<li><a href="#"><small>Advanced Search</small></a></li>
+								<li><a href="#"><small>Reverse Search</small></a></li>
+								<li><a href="#"><small>School Compare</small></a></li>
+							</ul>
+						</div>
+						<div class="col-8 col-sm-6 col-lg-4">
+							<h5 class="m-0">Our Apps</h5>
+
+							<div class="row mt-2">
+								<div class="col col-6">
+									<img class="img-fluid" src="assets/img/apple-download.png"/>
+								</div>
+								<div class="col col-6">
+									<img class="img-fluid" src="assets/img/google-download.png"/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row pt-4 text-white">
+						<div class="col-12 col-md-6">
+							<p class="m-0 d-none d-md-block text-left">&copy; Copyright, 2019 | Book of Schools</p>
+							<p class="m-0 d-md-none text-center">&copy; Copyright, 2019 | Book of Schools</p>
+						</div>
+						<div class="col-12 col-md-6">
+							<p class="m-0 d-none d-md-block text-right">Designed &amp; Developed by Chakrapani Gautam</p>
+							<p class="m-0 d-md-none text-center">Designed &amp; Developed by Chakrapani Gautam</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+	<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<script src="assets/js/material-kit.min.js" type="text/javascript"></script>
+	<script src="assets/js/script.js" type="text/javascript"></script>
+</body>
+</html>

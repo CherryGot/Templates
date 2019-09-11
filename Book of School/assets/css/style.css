@@ -1,0 +1,285 @@
+.dropdown-menu .dropdown-item:focus, 
+.dropdown-menu .dropdown-item:hover, 
+.dropdown-menu a:active, 
+.dropdown-menu a:focus, 
+.dropdown-menu a:hover {
+    background: #479f49;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px #479f496f;
+}
+
+.dropdown .dropdown-item {
+    white-space: normal;
+}
+
+.btn.btn-primary {
+    background-color: #479f49;
+    border-color: #479f49;
+    box-shadow: 0 2px 2px 0 rgba(71, 159, 73, 0.14), 0 3px 1px -2px rgba(71, 159, 73, 0.2), 0 1px 5px 0 rgba(71, 159, 73, 0.12);
+}
+
+.btn.btn-primary:active, 
+.btn.btn-primary:focus, 
+.btn.btn-primary:hover {
+    background-color: #479f49;
+    border-color: #479f49;
+    box-shadow: 0 14px 26px -12px rgba(71, 159, 73, 0.42), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(71, 159, 73, 0.2);
+}
+
+.btn.btn-primary.active.focus, 
+.btn.btn-primary.active:focus, 
+.btn.btn-primary.active:hover, 
+.btn.btn-primary:active.focus, 
+.btn.btn-primary:active:focus, 
+.btn.btn-primary:active:hover, 
+.open>.btn.btn-primary.dropdown-toggle.focus, 
+.open>.btn.btn-primary.dropdown-toggle:focus, 
+.open>.btn.btn-primary.dropdown-toggle:hover, 
+.show>.btn.btn-primary.dropdown-toggle.focus, 
+.show>.btn.btn-primary.dropdown-toggle:focus, 
+.show>.btn.btn-primary.dropdown-toggle:hover {
+    background-color: #479f49;
+    border-color: #479f49;
+}
+
+.btn.btn-accent {
+    color: #fff;
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+    box-shadow: 0 2px 2px 0 rgba(156,39,176,.14), 0 3px 1px -2px rgba(156,39,176,.2), 0 1px 5px 0 rgba(156,39,176,.12);
+}
+
+.btn.btn-accent:active, 
+.btn.btn-accent:focus, 
+.btn.btn-accent:hover {
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+    box-shadow: 0 14px 26px -12px rgba(156,39,176,.14), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(156,39,176,.14);
+}
+
+.btn.btn-accent.active.focus, 
+.btn.btn-accent.active:focus, 
+.btn.btn-accent.active:hover, 
+.btn.btn-accent:active.focus, 
+.btn.btn-accent:active:focus, 
+.btn.btn-accent:active:hover, 
+.open>.btn.btn-accent.dropdown-toggle.focus, 
+.open>.btn.btn-accent.dropdown-toggle:focus, 
+.open>.btn.btn-accent.dropdown-toggle:hover, 
+.show>.btn.btn-accent.dropdown-toggle.focus, 
+.show>.btn.btn-accent.dropdown-toggle:focus, 
+.show>.btn.btn-accent.dropdown-toggle:hover {
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+}
+
+.custom-card-header {
+    background: linear-gradient(60deg, #479f49ee, #479f49 ) !important;
+    box-shadow: 1px 2px 14px rgba(0,0,0,.4);
+}
+
+.fa {
+    font-size: 1.5rem;
+}
+
+.new-tag {
+    position: relative;
+}
+
+.new-tag::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "NEW";
+    font-size: 0.56rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 0 4px;
+    line-height: 1.12rem;
+    background: #9c27b0;
+}
+
+.card-subtitle {
+    margin-top: 0.125rem;
+    line-height: 1.15rem;
+}
+
+.form-check .form-check-label .circle {
+    top: 0;
+}
+
+.navbar {
+    border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .navbar-brand {
+    height: 75px;
+    transition: ease-in-out 0.3s;
+}
+
+.navbar .dropdown .dropdown-menu, 
+.navbar .dropdown.show .dropdown-menu {
+    height: auto;
+    overflow-y: auto;
+}
+
+.img-section {
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.bs-section > .content {
+    padding: 70px 0;
+    background: rgba(0,0,0,.6);
+}
+
+#search-section {
+    margin-top: 4.5rem;
+    background-image: url('../img/front-cover-1.jpg');
+}
+
+.search-form-wrapper {
+    max-width: 720px;
+    margin: 0 auto 0 auto;
+    transition: ease-in-out 0.3s;
+    overflow-x: hidden;
+}
+
+.search-form-wrapper .card-body {
+    overflow: hidden !important;
+}   
+
+.search-form-wrapper .card-body {
+    overflow: hidden;
+}
+
+.search-forms {
+    width: 200%;
+    transition: ease-in-out 0.3s;
+}
+
+.search-forms .form {
+    width: 50%;
+    float: left;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.search-form-wrapper .link-btn {
+    color: #fff;
+}
+
+.search-form-wrapper .link-btn:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.counter-icon {
+    font-size: 2.4rem;
+}
+
+.card .card-body {
+    overflow-y: auto;
+}
+
+.card table {
+    min-width: 640px;
+} 
+
+.card table thead th{
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.card table tbody tr:nth-child(even) {
+    background: #479f4933;
+}
+
+.card table tbody td {
+    padding: 0.4rem 0 0.25rem 0;
+}
+
+.card table .new-tag::before {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+}
+
+.card table th.date {
+    min-width: 95px;
+}
+
+.card table th.day {
+    min-width: 75px;
+}
+
+.card table td.notice {
+    padding-right: 1rem !important;
+}
+
+.card table td a {
+    color: rgba(0,0,0,.87);
+}
+
+.card table td a:hover {
+    color: rgba(0,0,0,.87);
+    text-decoration: underline;
+}
+
+#top-searches .dropdown-menu label.form-check-label {
+    color: #000;
+}
+
+#top-searches .d-sm-flex .form-check .circle {
+    border-color: #fff; 
+}
+
+#top-searches .d-sm-flex .form-check .circle .check {
+    background: #fff;
+}
+
+#top-searches .school-logo {
+    text-align: center;
+}
+
+#top-searches .school-logo img{
+    max-height: 56px;
+}
+
+#rating-searches .school-logo img {
+    max-height: 32px;
+}
+
+footer h5,
+footer ul li,
+footer ul li a,
+footer ul li a small {
+    display: block;
+    color: #fff;
+    padding: 0;
+}
+
+@media screen and (min-width: 992px) {
+    
+    .dropdown .dropdown-item {
+        white-space: nowrap;
+    }
+
+    .navbar .navbar-brand {
+        height: 84px;
+    }
+}
+
+@media screen and (max-width: 767.8px) { 
+    #search-section h2 {
+        font-size: 1.6rem
+    }
+}
