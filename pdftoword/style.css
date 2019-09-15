@@ -1,0 +1,258 @@
+.title {
+    font-family: Dosis, Roboto, sans-serif;
+}
+
+.btn {
+    color: #927e7e;
+    border-radius: 20px;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    border-color: #927e7e;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+}
+
+.btn:hover {
+    color: #665252;
+}
+
+.red-btn,
+.red-btn:hover,
+.red-btn:focus,
+.red-btn:active {
+    background: #ed5151;
+    border-color: #ed5151;
+    color: #fff;
+}
+
+
+.blue-btn,
+.blue-btn:hover,
+.blue-btn:focus,
+.blue-btn:active {
+    background: #0078d7;
+    border-color: #0078d7;
+    color: #fff;
+}
+
+
+.header {
+    position: relative;
+}
+
+.header .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-image: linear-gradient(60deg, #fefefe, #efefef);
+}
+
+.header .container {
+    position: relative;
+}
+
+.header .brand-logo img {
+    width: 210px;
+}
+
+.header .navbar .nav-item {
+    margin-right: 1.2rem;
+    position: relative;
+}
+
+.header .navbar .nav-item:last-child {
+    margin-right: 0;
+}
+
+.header .navbar .nav-item:hover::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #febd01;
+    animation: border-y-up 0.3s;
+}
+
+.header .navbar .nav-item:hover::after {
+    position: absolute;
+    content: '';
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #febd01;
+    animation: border-y-down 0.3s;
+}
+
+@keyframes border-y-up {
+    from {
+        top: 50%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes border-y-down {
+    from {
+        bottom: 50%;
+    }
+    to {
+        bottom: 2px;
+    }
+}
+
+
+.header .navbar .nav-link {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #927e7e;
+}
+
+.header .navbar .nav-link.active {
+    color: #634d4d;
+}
+
+.header .navbar .nav-link:hover {
+    color: #665252;
+}
+
+.header .dropdown-item {
+    font-size: 0.8rem;
+    color: #927e7e;
+}
+
+.header .dropdown-item:hover {
+    color: #665252;
+}
+
+.header .word-cloud-wrapper {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.header h5 {
+    color: #555;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.header .search-wrapper {
+    max-width: 400px;
+}
+
+.header .search-wrapper .form-control {
+    border-radius: 20px 0 0 20px;
+    padding-left: 1rem;
+    font-weight: 300;
+    color: #333;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.14);
+    border: none;
+}
+
+.header .search-wrapper .btn {
+    border-radius: 0 20px 20px 0;
+    padding-left: 0.5rem;
+    padding-right: 0.8rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .search-wrapper .btn i.fa {
+    font-size: 18px;
+    transform: rotateY(180deg);
+}
+
+.section-title {
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.25rem;
+    position: relative;
+    padding: 0.6rem 0 0.6rem 0.2rem;
+    display: inline;
+}
+
+.section-title::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #febd01;
+}
+
+.section-title::after {
+    position: absolute;
+    content: '';
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #febd01;
+}
+
+#services .card {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+}
+
+#services .card:hover {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);   
+}
+
+#services .card .illustration {
+    text-align: center;
+}
+
+#services .card .illustration img {
+    max-width: 56px;
+}
+
+#services .card .illustration i.fa {
+    font-size: 28px;
+    vertical-align: middle;
+    color: #927e7e;
+    padding: 0 1rem;
+}
+
+#services .card p,
+#services .card li {
+    font-size: 0.96rem;
+    font-weight: 300;
+    color: #927e7e;
+}
+
+#faqs {
+    background-image: linear-gradient(60deg, #fcfcfc, #efefef);
+}
+
+#accordion h5.title a.quest {
+    color: #634d4d;
+}
+
+#accordion h5.title a.quest:hover {
+    text-decoration: none;
+}
+
+#accordion .card p {
+    font-size: 0.96rem;
+    font-weight: 300;
+    color: #927e7e;
+}
+
+
+footer .social-links a:hover {
+    text-decoration: none;
+}
+
+footer .social-links i.fa {
+    font-size: 1.4rem;
+}
+
+/*http://preview.themeforest.net/item/thesaas-responsive-bootstrap-saas-software-webapp-template/full_screen_preview/19778599?_ga=2.228454045.1822053514.1568434000-988902852.1568433876*/
